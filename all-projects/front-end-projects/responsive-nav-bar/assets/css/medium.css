@@ -1,0 +1,6 @@
+/* RESPONSIVE NAV BAR
+ 35em is equivalent to 560px when basefont is set to 16px in the body or html selector 
+ 
+ MEDIUM BREAKPOINT*/
+@media only screen and (min-width: 35em) {
+} /* END MEDIA QUERY */

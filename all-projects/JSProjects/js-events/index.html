@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>
+      CIT 261 Standard JavaScript Events Including those for Mobile Devices |
+      Grady HOdge | BYU-Idaho
+    </title>
+    <meta
+      name="description"
+      content=" Lesson 9 - Standard JavaScript Events Including those for Mobile Devices ( Ex. onTouchBegin, onLoad, etc.) and Animation and Transition Events documentation site to showcase lesson mastery for Ali Cope in CIT 261 JavaScript Mobile Development at Brigham Young University-Idaho."
+    />
+    <link rel="stylesheet" href="css/lesson3.css" />
+    <link rel="stylesheet" href="css/lesson9.css" />
+  </head>
+
+  <body id="body">
+    <header>
+      <h1>CIT 261 | JS Events</h1>
+    </header>
+    <nav>
+      <a href="/cope-ali261.github.io/">Home</a>
+      <a href="lesson10.html">Next Lesson</a>
+    </nav>
+    <main>
+      <h2>
+        Lesson 9 - Standard JavaScript Events Including those for Mobile Devices
+        ( Ex. onTouchBegin, onLoad, etc.) and Animation and Transition Events
+      </h2>
+      <p>
+        JavaScript events are things that happen to HTML elements. We have
+        already used one very common event "onclick". Here is a list of the most
+        common HTML Events from w3schools.
+      </p>
+      <img src="img/HTMLevents.png" alt="HTML Events Chart" />
+
+      <section>
+        <h3>HTML Event Examples</h3>
+        <p>HTML Code</p>
+        <img src="img/lesson9html.png" />
+        <p>CSS and JavaScript Code</p>
+        <img src="img/lesson9cssJS.png" />
+        <div id="mouseDiv" class="none" onmouseover="mouse()">Mouse Over</div>
+        <button type="button" onclick="clicky()">On Click</button><br />
+        <img src="img/mouse.png" alt="mouse" id="mouse" class="hide" />
+      </section>
+
+      <section id="mobile">
+        <h3>Mobile Enviornment</h3>
+        <p>
+          Other events are specific to use in the mobile enviornment. Here is a
+          list from javascriptkit.com
+        </p>
+        <img src="img/JStouchEvents.png" alt="JavaScript Touch Events" />
+        <p>
+          When using a touch event we also need to use an event listener. This
+          "listens" for the touch event to take place. <br />
+          someElement.addEventListener('touchstart',
+          process_touchstart,false);<br />
+          Here is a code example. For our code here you can touch anywhere in
+          the body of the page and the output will be the x and y coordinates of
+          the touch event.
+        </p>
+        <img src="img/mobileCode.png" alt="code for mobile touch" />
+        <div id="outputDiv"></div>
+      </section>
+    </main>
+    <footer>
+      <p>
+        &copy; Grady
+        <a href="http://www.byui.edu/online">BYU-Idaho Online Learning</a>
+      </p>
+    </footer>
+    <script src="js/lesson9.js"></script>
+    <script src="js/lesson9m.js"></script>
+  </body>
+</html>

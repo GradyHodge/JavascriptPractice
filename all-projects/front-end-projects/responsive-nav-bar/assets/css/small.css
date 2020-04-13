@@ -1,0 +1,51 @@
+nav button {
+  margin: 0.2rem 2%;
+  background-color: transparent;
+  border: none;
+  font-size: 1.6rem; /* recommend @44px for easy to mash on a touch screen */
+  color: #fff;
+}
+
+nav {
+  background-color: #f70;
+  font-family: Verdana, sans-serif;
+}
+
+nav ul {
+  list-style-type: none;
+  padding: 0;
+  margin: 0;
+}
+
+nav ul li a {
+  display: block;
+  padding: 0.8rem 2%;
+  text-decoration: none;
+  color: rgba(255, 255, 255, 0.8);
+  border-top: 2px solid rgba(0, 0, 0, 0.3);
+}
+
+nav ul.hide {
+  display: none;
+}
+
+/* keep the .css selector above the a:hover selector so the active menu item also changes colors */
+nav ul li.active a {
+  background-color: rgba(0, 0, 0, 0.2);
+  color: #fff;
+}
+
+nav ul li a:hover {
+  background-color: rgba(0, 0, 0, 0.4);
+}
+
+/*------------------------------------------------------
+CLEARFIX: Force an Element not to collapse margin space 
+--------------------------------------------------------*/
+.clearFix:after {
+  content: "";
+  display: table;
+  clear: both;
+}
+
+

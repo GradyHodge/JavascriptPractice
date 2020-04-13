@@ -1,0 +1,102 @@
+/* 
+Use CSS Grid template area to move the pages into their appropriate order and 
+make interface responsive and place content into page sections 
+so they can be printed both front and back 
+*/
+/* 
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+} */
+
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+.page-container {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  grid-template-rows: repeat(8, 1fr);
+  grid-template-areas:
+    "pg10 pg13"
+    "pg5 pg2"
+    "pg6 pg1"
+    "pg9 pg14"
+    "pg12 pg11"
+    "pg3 pg4"
+    "front-outer pg7"
+    "back-outer pg8";
+
+  width: 8.5in;
+  height: 22in;
+
+  gap: 15px;
+  /* max-width: 727px; */
+  margin: 10px auto;
+  border: 6px dotted purple;
+}
+.page-container div {
+  border: 2px solid green;
+  /* width: 350px;
+  height: 350px;*/
+  position: relative;
+}
+
+.page-container div p {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50% -50%);
+}
+
+.front-outer {
+  grid-area: front-outer;
+}
+.pg1 {
+  grid-area: pg1;
+}
+.pg2 {
+  grid-area: pg2;
+}
+.pg3 {
+  grid-area: pg3;
+}
+.pg4 {
+  grid-area: pg4;
+}
+.pg5 {
+  grid-area: pg5;
+}
+.pg6 {
+  grid-area: pg6;
+}
+.pg7 {
+  grid-area: pg7;
+}
+.pg8 {
+  grid-area: pg8;
+}
+.pg9 {
+  grid-area: pg9;
+}
+.pg10 {
+  grid-area: pg10;
+}
+.pg11 {
+  grid-area: pg11;
+}
+.pg12 {
+  grid-area: pg12;
+}
+.pg13 {
+  grid-area: pg13;
+}
+.pg14 {
+  grid-area: pg14;
+}
+.back-outer {
+  grid-area: back-outer;
+}

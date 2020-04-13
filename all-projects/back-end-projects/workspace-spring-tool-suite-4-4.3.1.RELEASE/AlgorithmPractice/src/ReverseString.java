@@ -1,0 +1,21 @@
+public class ReverseString {
+
+	public static void main(String[] args) {
+		// TODO Auto-generated method stub
+		
+//using the String Builder Method
+		
+		String str = "Hello World";
+		System.out.println(str);
+		System.out.println(reverseWithStringBuilder(str));
+
+	}
+
+	private static String reverseWithStringBuilder(String str) {
+		
+		return new StringBuilder(str)
+				.reverse()
+				.toString();
+	}
+	
+}
