@@ -1,0 +1,26 @@
+{
+  "name": "sass-project",
+  "version": "1.0.0",
+  "description": "practice building SASS project without notes",
+  "main": "index.js",
+  "scripts": {
+    "compile:sass": "sass --watch ./sass/main.scss:./css/style.css"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/GradyHodge/sass-projects.git"
+  },
+  "keywords": [
+    "sass",
+    "scss"
+  ],
+  "author": "BossMonkey",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/GradyHodge/sass-projects/issues"
+  },
+  "homepage": "https://github.com/GradyHodge/sass-projects#readme",
+  "dependencies": {
+    "sass": "^1.26.3"
+  }
+}
