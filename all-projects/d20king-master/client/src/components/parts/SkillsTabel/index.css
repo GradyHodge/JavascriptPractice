@@ -1,0 +1,13 @@
+thead{
+	background-color: darkgray;
+	color: black;
+}
+
+th, td {
+	text-align: center;
+}
+
+#skillsTabel{
+	width: 70vw;
+	margin: 20px auto;
+}

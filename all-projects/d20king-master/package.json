@@ -1,0 +1,44 @@
+{
+  "name": "d20king",
+  "version": "1.0.0",
+  "description": "MERN app template with bcrypt and jwt for authentication",
+  "main": "server.js",
+  "scripts": {
+    "start": "if-env NODE_ENV=production && npm run start:prod || npm run start:dev",
+    "start:prod": "node server.js",
+    "start:dev": "concurrently \"nodemon --ignore 'client/*'\" \"npm run client\"",
+    "client": "cd client && npm run start",
+    "install": "cd client && npm install",
+    "format": "prettier --write \"app/**/*.js\"",
+    "build": "cd client && npm run build",
+    "heroku-postbuild": "npm run build"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/Foscat/MERN_app-template.git"
+  },
+  "author": "Foscat",
+  "license": "ISC",
+  "devDependencies": {
+    "concurrently": "^5.2.0",
+    "nodemon": "^2.0.2"
+  },
+  "dependencies": {
+    "axios": "^0.19.2",
+    "bcrypt": "^3.0.8",
+    "dotenv": "^8.2.0",
+    "express": "^4.16.3",
+    "if-env": "^1.0.4",
+    "jsonwebtoken": "^8.5.1",
+    "minimist": ">=1.2.3",
+    "moment": "^2.24.0",
+    "mongoose": "^5.9.7",
+    "prettier": "^2.0.5",
+    "prop-types": "^15.7.2",
+    "react": "^16.13.1"
+  },
+  "bugs": {
+    "url": "https://github.com/Foscat/MERN_app-template-withAuth/issues"
+  },
+  "homepage": "https://github.com/Foscat/MERN_app-template-withAuth#readme"
+}
