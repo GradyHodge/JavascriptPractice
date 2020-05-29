@@ -8,7 +8,8 @@ import LogIn from "components/parts/LogIn";
 import Flextron from "components/parts/FlexTron";
 import RulesList from "components/parts/RulesList";
 import SkillsTabel from "components/parts/SkillsTabel";
-import "./index.css";
+
+import "sass/_index.scss";
 
 class Home extends Component {
   constructor(props) {
@@ -96,12 +97,12 @@ class Home extends Component {
           onConfirm={() => this.setState({ show: false })}
           confirmBtnText="Close"
           confirmBtnStyle={{ backgroundColor: "red" }}
-          style={styles.center}
+          className="center"
         >
-          <div style={styles.sweetBox}>{text}</div>
+          <div className="sweetbox">{text}</div>
         </SweetAlert>
 
-        <Row style={{ justifyContent: "space-around" }}>
+        <Row className="justify">
           <Col className="mt-5" sm="11">
             <Flextron
               title="D20 King"
@@ -138,15 +139,15 @@ class Home extends Component {
   }
 }
 
-const styles = {
-  center: {
-    justifyContent: "center",
-  },
-  sweetBox: {
-    maxHeight: "50vh",
-    minWidth: "50%",
-    overflow: "auto",
-  },
-};
+// const styles = {
+//   center: {
+//     justifyContent: "center",
+//   },
+//   sweetBox: {
+//     maxHeight: "50vh",
+//     minWidth: "50%",
+//     overflow: "auto",
+//   },
+// };
 
 export default Home;

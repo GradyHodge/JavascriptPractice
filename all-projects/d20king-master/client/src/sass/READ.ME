@@ -1,15 +1,19 @@
 STYLING STANDARDS
+1. Naming CONVENTION
+2. SASS Folder Structure
+3. Sass Build Process
 
-
+////////////////////////////////////////////////////
   ////////                       \\\\\\\\
  ////////    NAMING CONVENTION    \\\\\\\\
 ////////        BEM METHOD         \\\\\\\\
 
-block__element--modifier
+           block__element--modifier
 
-  ////////                       \\\\\\\\
- ////////      SASS   SET UP      \\\\\\\\
-////////                           \\\\\\\\
+///////////////////////////////////////////////////
+  ////////                              \\\\\\\\
+ ////////      SASS Folder Structure     \\\\\\\\
+////////          7-in-1 Pattern          \\\\\\\\
 
 The 7–1 Pattern
 The architecture known as the 7–1 pattern (7 folders, 1 file), 
@@ -87,3 +91,27 @@ Note: There’s no need to include the _ or .scss file extension when importing.
 REFERENCE:
 https://itnext.io/structuring-your-sass-projects-c8d41fa55ed4
 
+///////////////////////////////////////////////////
+  ////////                              \\\\\\\\
+ ////////      SASS Build Process        \\\\\\\\
+////////       NPM Script Workflow        \\\\\\\\
+
+1. Compilation
+2. Concatenation
+3. Prefixing
+4. Compressing
+5. Build
+
+"scripts": {
+  "watch-sass": "node-sass sass/main.scss css/style.css --watch",
+  "compile-sass": "node-sass sass/main.scss css/style.comp.css",
+  "concat-css": "concat -o css/style.concat.css css/additional.css css/style.comp.css",
+  “prefix-css”: “postcss --use autoprefixer -b 'last 5 versions' css/style.concat.css -o css/style.prefix.css”,
+  "compress-css": "node-sass css/style.prefix.css css/style.css --output-style compressed",
+  "build-css": "npm-run-all compile-sass concat-css prefix-css compress-css"
+},
+
+
+REFERENCE: 
+https://itnext.io/setting-up-a-sass-build-process-aa9fd92fa585
+https://medium.com/@SigniorGratiano/advanced-css-and-sass-sass-workflow-c2567f20297c
