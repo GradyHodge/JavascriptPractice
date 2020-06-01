@@ -9,7 +9,7 @@ import Flextron from "components/parts/FlexTron";
 import RulesList from "components/parts/RulesList";
 import SkillsTabel from "components/parts/SkillsTabel";
 
-import "./sass/main.css";
+import "sass/main.scss";
 
 class Home extends Component {
   constructor(props) {

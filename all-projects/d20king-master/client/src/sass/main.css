@@ -57,4 +57,48 @@ body {
     padding: 0;
   }
 }
+
+.hpHeader {
+  background-color: lightgray;
+  font-family: "Viaoda Libre", cursive;
+}
+
+.center {
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+
+.justify {
+  -ms-flex-pack: distribute;
+      justify-content: space-around;
+}
+
+.sweetBox {
+  max-height: 50vh;
+  min-width: 50%;
+  overflow: auto;
+}
+
+.hpHeader {
+  background-color: lightgray;
+  font-family: "Viaoda Libre", cursive;
+}
+
+.center {
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+
+.justify {
+  -ms-flex-pack: distribute;
+      justify-content: space-around;
+}
+
+.sweetBox {
+  max-height: 50vh;
+  min-width: 50%;
+  overflow: auto;
+}
 /*# sourceMappingURL=main.css.map */

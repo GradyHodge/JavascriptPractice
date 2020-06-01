@@ -4,6 +4,7 @@
   "description": "client side of MERN app",
   "dependencies": {
     "axios": ">=0.18.1",
+    "node-sass": "^4.14.1",
     "prettier": "^2.0.5",
     "react": "^16.6.3",
     "react-bootstrap-sweetalert": "^4.4.1",
