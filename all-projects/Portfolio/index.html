@@ -18,6 +18,8 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>GRADY'S LANDING PAGE</title>
+
+    <link rel="stylesheet" href="./landing-page/scss-landing-page/main.css" />
   </head>
   <body>
     <!-- HEADER
@@ -28,10 +30,15 @@
 
     <header>
       <div class="header__head-shot">
-        <img src="" alt="headshot of Grady W Hodge" />
+        <img
+          src="./landing-page/images-landing-page/grady-hodge-head-n-shoulders-400x553.jpg"
+          alt="headshot of Grady W Hodge"
+        />
       </div>
-      <div class="header__name">Grady W Hodge</div>
-      <div class="header__title">Front End UI & AEM Developer</div>
+      <div class="header__name-tag">
+        <div class="header__name"><h1>Grady W Hodge</h1></div>
+        <div class="header__title"><h2>Front End UI & AEM Developer</h2></div>
+      </div>
     </header>
 
     <!-- Social Proof Buttons 
@@ -43,9 +50,9 @@
   -->
 
     <section class="social-links">
-      <div class="linkedin"></div>
-      <div class="github"></div>
-      <div class="facebook"></div>
+      <div class="linkedin">LinkedIn Button</div>
+      <div class="github">GitHub Button</div>
+      <div class="facebook">Facebook Button</div>
     </section>
 
     <!-- QUICK BIOGRAPHY
@@ -55,12 +62,14 @@
         4. IDEAL JOB DESCRIPTION
   -->
 
-    <section class="bio">
+    <section class="bio__box">
       <div>
-        <p class="focus"></p>
-        <p class="unique"></p>
-        <p class="personality"></p>
-        <p class="ideal-job"></p>
+        <p class="focus">currently doing...</p>
+        <p class="unique">unique background in...</p>
+        <p class="personality">
+          personality... values... language skills.../p>
+        </p>
+        <p class="ideal-job">ideal job preferences, location, travel, remote</p>
       </div>
     </section>
 
@@ -69,16 +78,34 @@
         2. FRAMEWORKS
         3. RELATED EXPERIENCE
   -->
-    <section class="skills">
-      <div class="languages"></div>
-      <div class="frameworks"></div>
-      <div class="experience"></div>
+    <section class="skills__box">
+      <div class="languages">Languages</div>
+      <div class="frameworks">Frameworks</div>
+      <div class="experience">Experience</div>
     </section>
 
     <!-- CTA - CONTACT GRADY
         1. CONTACT INFO REQUEST... LOGIN
         2. JOB CONTACT FORM
   -->
+
+    <secton class="cta__box">
+      <div class="cta__message">
+        <p>CTA message goes here</p>
+      </div>
+    </secton>
+
+    <section class="contact__box">
+      <div class="contact__form"></div>
+      <form action="">
+        <label for="firstName"></label>
+        <input type="text" value="firstName" />
+      </form>
+      <div class="contact__info">
+        <p class="email">email:</p>
+        <p class="phone">google-voice#</p>
+      </div>
+    </section>
 
     <footer>
       current date last updated copyright quote of the day (json file random #

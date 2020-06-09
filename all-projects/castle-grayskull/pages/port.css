@@ -1,0 +1,154 @@
+* {
+  box-sizing: border-box;
+}
+
+body {
+  display: grid;
+  grid-template-columns: auto 1fr 1fr;
+  grid-template-rows: auto 75px auto 400px auto auto;
+  grid-template-areas:
+    "image header header"
+    "links links links"
+    "bio bio bio"
+    "skills skills skills"
+    "cta cta cta"
+    "form form contact"
+    "footer footer footer";
+  background-color: rgb(21, 21, 21);
+}
+
+.image {
+  grid-area: image;
+  background: rgb(26, 24, 24);
+}
+
+.image img {
+  border-radius: 3%;
+  margin: 10px;
+}
+
+header {
+  grid-area: header;
+  background-color: rgb(26, 24, 24);
+  color: white;
+}
+
+header h1 {
+  letter-spacing: 3px;
+  line-height: 175%;
+  margin-left: 15%;
+}
+
+nav {
+  grid-area: links;
+  background-color: black;
+}
+
+.bio {
+  grid-area: bio;
+  background-color: rgb(26, 24, 24);
+  color: white;
+}
+
+.skills {
+  grid-area: skills;
+  background-color: black;
+  color: white;
+}
+
+.skills ul {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  list-style: none;
+}
+
+.skills li a {
+  text-decoration: none;
+  padding: 10px;
+  font-size: 30px;
+}
+
+.cta {
+  grid-area: cta;
+  background-color: rgb(26, 24, 24);
+  color: white;
+}
+
+.form__box {
+  grid-area: form;
+  background-color: rgb(255, 255, 255);
+  margin: 20px;
+}
+
+form {
+  display: flex;
+  flex-direction: column;
+  padding: 5% 15%;
+}
+
+.contact {
+  grid-area: contact;
+  background-color: rgb(26, 24, 24);
+  color: white;
+}
+
+footer {
+  grid-area: footer;
+  background-color: black;
+  color: white;
+}
+
+/* ///////////////////////// */
+/*    FLEXBOX ATTRIBUTES     */
+/* ///////////////////////// */
+/*         CENTERING         */
+/* ///////////////////////// */
+
+nav ul {
+  display: flex;
+  flex-direction: row;
+  /* CENTERING */
+  justify-content: center;
+  align-items: center;
+  height: 100%;
+  /* specify height for vertical centering to work */
+  margin: 0;
+  padding: 0;
+  /* reset list margin to zero for centering to work */
+
+  list-style: none;
+}
+
+/* ///////////////////////// */
+/*    FLEXBOX ATTRIBUTES     */
+/* ///////////////////////// */
+/*         CENTERING         */
+/* ///////////////////////// */
+
+.myButton {
+  box-shadow: inset 0px 0px 15px 3px #23395e;
+  background: linear-gradient(to bottom, #2e466e 5%, #415989 100%);
+  background-color: #2e466e;
+  border-radius: 17px;
+  border: 1px solid #1f2f47;
+  display: inline-block;
+  cursor: pointer;
+  color: #ffffff;
+  font-family: Arial;
+  font-size: 30px;
+  margin: 0 25px;
+  padding: 8px 15px;
+  text-decoration: none;
+  text-shadow: 0px 1px 0px #263666;
+}
+
+.myButton:hover {
+  background: linear-gradient(to bottom, #415989 5%, #2e466e 100%);
+  background-color: #415989;
+}
+
+.myButton:active {
+  position: relative;
+  top: 1px;
+}

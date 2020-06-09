@@ -1,0 +1,98 @@
+* {
+  box-sizing: border-box;
+}
+
+body {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+  grid-template-rows: 300px 75px 200px 400px auto auto;
+  grid-template-areas:
+    "image header header"
+    "links links links"
+    "bio bio bio"
+    "skills skills skills"
+    "cta cta cta"
+    "form form contact"
+    "footer footer footer";
+}
+
+.image {
+  grid-area: image;
+  background-color: lightblue;
+}
+
+.image img header {
+  grid-area: header;
+  background-color: blue;
+  color: white;
+}
+
+nav {
+  grid-area: links;
+  background-color: yellow;
+}
+
+.bio {
+  grid-area: bio;
+  background-color: slategray;
+  color: white;
+}
+
+.skills {
+  grid-area: skills;
+  background-color: orange;
+}
+.cta {
+  grid-area: cta;
+  background-color: red;
+  color: white;
+}
+
+.form__box {
+  grid-area: form;
+  background-color: yellow;
+}
+
+.contact {
+  grid-area: contact;
+  background-color: blue;
+  color: white;
+}
+
+footer {
+  grid-area: footer;
+  background-color: purple;
+  color: white;
+}
+
+/* ///////////////////////// */
+/*    FLEXBOX ATTRIBUTES     */
+/* ///////////////////////// */
+/*         CENTERING         */
+/* ///////////////////////// */
+
+nav ul {
+  display: flex;
+  flex-direction: row;
+  /* CENTERING */
+  justify-content: center;
+  align-items: center;
+  height: 100%;
+  /* specify height for vertical centering to work */
+  margin: 0;
+  padding: 0;
+  /* reset list margin to zero for centering to work */
+
+  list-style: none;
+}
+
+nav ul a {
+  text-decoration: none;
+  margin: 0 20px;
+}
+
+/* ///////////////////////// */
+/*    FLEXBOX ATTRIBUTES     */
+/* ///////////////////////// */
+/*         CENTERING         */
+/* ///////////////////////// */

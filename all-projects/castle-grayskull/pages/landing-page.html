@@ -1,0 +1,115 @@
+<!-- SIMPLE MVP LANDING PAGE
+      SITE OBJECTIVE: GET A JOB
+      TODO: SITE PURPOSE: SHOWCASE WORK FOCUS TO MATCH UP JOB OPPORTUNITIES
+        1 LANGUAGES/FRAMEWORKS
+      TODO: SITE ACTIVITIES
+        1 LINK TO LINKEDIN - EASILY DESCRIBE BACKGROUND PATHWAY
+        2 LINK TO GITHUB PORTAL - CREATE A PORTAL TO SHOWCASE PERSONAL DEVELOPMENT PROJECTS
+        3 LINK TO FACEBOOK PROFESSIONAL SITE - WHITE WASHED PERSONAL BRANDING
+      TODO: SITE CTA
+        1 CONTACT GRADY BY PHONE, EMAIL
+        2 JOB OPPORTUNITY FORM
+        3 JOB PREFERENCES LIST FOR RECRUITERS
+-->
+
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>GRADY'S LANDING PAGE</title>
+
+    <link rel="stylesheet" href="./landing.css" />
+  </head>
+  <body>
+    <!-- HEADER
+        1. HEADSHOT
+        2. NAME
+        3. TITLE
+  -->
+
+    <header>
+      <div class="header__head-shot">
+        <img
+          src="./landing-page/images-landing-page/grady-hodge-head-n-shoulders-400x553.jpg"
+          alt="headshot of Grady W Hodge"
+        />
+      </div>
+      <div class="header__name-tag">
+        <div class="header__name"><h1>Grady W Hodge</h1></div>
+        <div class="header__title"><h2>Front End UI & AEM Developer</h2></div>
+      </div>
+    </header>
+
+    <!-- Social Proof Buttons 
+        1. LinkedIn - resume- work experience - another channel to contact me
+        2. GitHub - Project Portal
+        3. Facebook - Personal Branding
+
+        REFACTOR. later recreate these sources to keep them inside the landing page funnel.
+  -->
+
+    <section class="social-links">
+      <div class="linkedin">LinkedIn Button</div>
+      <div class="github">GitHub Button</div>
+      <div class="facebook">Facebook Button</div>
+    </section>
+
+    <!-- QUICK BIOGRAPHY
+        1. MAIN FOCUS
+        2. UNIQUE PERSPECTIVE
+        3. PERSONALITY
+        4. IDEAL JOB DESCRIPTION
+  -->
+
+    <section class="bio__box">
+      <div>
+        <p class="focus">currently doing...</p>
+        <p class="unique">unique background in...</p>
+        <p class="personality">
+          personality... values... language skills.../p>
+        </p>
+        <p class="ideal-job">ideal job preferences, location, travel, remote</p>
+      </div>
+    </section>
+
+    <!-- SKILLS, LANGUAGES, FRAMEWORKS
+        1. LANGUAGES
+        2. FRAMEWORKS
+        3. RELATED EXPERIENCE
+  -->
+    <section class="skills__box">
+      <div class="languages">Languages</div>
+      <div class="frameworks">Frameworks</div>
+      <div class="experience">Experience</div>
+    </section>
+
+    <!-- CTA - CONTACT GRADY
+        1. CONTACT INFO REQUEST... LOGIN
+        2. JOB CONTACT FORM
+  -->
+
+    <secton class="cta__box">
+      <div class="cta__message">
+        <p>CTA message goes here</p>
+      </div>
+    </secton>
+
+    <section class="contact__box">
+      <div class="contact__form"></div>
+      <form action="">
+        <label for="firstName"></label>
+        <input type="text" value="firstName" />
+      </form>
+      <div class="contact__info">
+        <p class="email">email:</p>
+        <p class="phone">google-voice#</p>
+      </div>
+    </section>
+
+    <footer>
+      current date last updated copyright quote of the day (json file random #
+      generator)
+    </footer>
+  </body>
+</html>

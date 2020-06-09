@@ -1,0 +1,67 @@
+* {
+  box-sizing: border-box;
+}
+
+body {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+  grid-template-rows: 250px 50px 200px 400px auto;
+  grid-template-areas:
+    "image header header"
+    "links links links"
+    "bio bio bio"
+    "skills skills skills"
+    "cta cta cta"
+    "form form contact";
+}
+
+.header__head-shot {
+  grid-area: image;
+  width: 100;
+  height: 200;
+  background-color: lightblue;
+}
+
+.header__name-tag {
+  grid-area: header;
+}
+
+.social-links {
+  grid-area: links;
+  background-color: yellow;
+}
+
+.bio__box {
+  grid-area: bio;
+  background-color: blue;
+  color: white;
+}
+
+.skills__box {
+  grid-area: skills;
+  background-color: green;
+  color: white;
+}
+
+.cta__box {
+  grid-area: cta;
+  background-color: red;
+  color: white;
+}
+
+.contact__box {
+  grid-area: form;
+  background-color: yellow;
+}
+
+.contact__info {
+  grid-area: contact;
+  background-color: blue;
+  color: white;
+}
+
+footer {
+  grid-area: footer;
+  background-color: purple;
+  color: white;
+}

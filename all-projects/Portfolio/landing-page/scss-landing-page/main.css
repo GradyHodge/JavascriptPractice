@@ -1,0 +1,63 @@
+/* change to SCSS later */
+
+* {
+  box-sizing: border-box;
+}
+
+body {
+  font-family: serif;
+  margin: 50px;
+  display: grid;
+  grid-template-columns: 33% 34% 33%;
+  grid-auto-rows: minmax(100px, auto);
+  grid-template-areas:
+    "image hd hd"
+    "links links links"
+    "bio bio bio"
+    "skills skills skills"
+    "cta cta cta"
+    "form form contact"
+    "footer footer footer";
+}
+
+.header__head-shot,
+.header__name-tag,
+.social-links,
+.bio__box,
+.skills__box,
+.cta__box,
+.contact__form,
+.contact__info {
+  padding: 16px;
+}
+.header__head-shot {
+  grid-area: image;
+}
+
+.header__name-tag {
+  grid-area: hd;
+}
+
+.social-links {
+  grid-area: links;
+}
+
+.bio__box {
+  grid-area: bio;
+}
+
+.skills__box {
+  grid-area: skills;
+}
+
+.cta__box {
+  grid-area: cta;
+}
+
+.contact__form {
+  grid-area: form;
+}
+
+.contact__info {
+  grid-area: contact;
+}
